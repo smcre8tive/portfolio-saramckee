@@ -1,14 +1,19 @@
 /* 
 colors used:
-primary (green): #889182;
-secondary (gold): #BF9F58;
-highlight (pink): #EEC5B4;
+primary (green): #4F564A;
+secondary (gold): #81611A;
+highlight (pink): #CF9F87;
 black: #040404;
 white: #FFFEFB;
 */
 body { 
     background-color:#FFFEFB;
-    font-family: 'Lexend', sans-serif;
+    font-family:'Lora', serif; /* for h1-h3 */
+    font-size:30px; /* sets the font size to 30 px*/
+    font-weight:300; /* sets the font weight to 300 */
+    line-height:1.6; /* sets the line height to 1.6 * the font-size */
+    color: #040404;
+    font-family: 'Lexend', sans-serif; /* for h4-p and buttons*/
     font-size: 18px; /* sets the font size to 18 px*/
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -18,70 +23,72 @@ h1, h2, h3, h4 {
     line-height: 1.4;
   }
   h1 {
-    font-size: 4em;
-    font-weight: 500;
+    font-family:'Lora', serif;
+    font-size:3em; /* 60px */
+    font-weight:300
   }
-  
   h2 {
-    font-size: 3.2em;
-    font-weight: 500;
+    font-family: 'Lora', serif;
+    font-size:2.5em; /* 50px */
+    font-weight:400;
   }
   
   h3 {
-    font-size: 2em;
-    font-weight: 600;
+    font-family: 'Lora', serif;
+    font-size:2em; /* 40px */
+    font-weight:300;
   }
   h4 {
-    font-size: 1.8em;
-    font-weight: 400;
-  }
-  h5 {
-    font-size: 1.2em;
-    font-weight: 700;
+    font-family: 'Lexend', sans-serif;
+    font-size:1.8em; /* 30px */
+    font-weight:300;
   }
     
 img {
     width:100%;
 }
 a {
-    color:#BF9F58;
+    color:#81611A;
     text-decoration: none; /* no underlining */
 }
 a:visited { /*visited link */
-    color:#889182;
+    color:#040404;
 }
 a:hover {
-    color:#EEC5B4;
+    color:#CF9F87;
     text-decoration:underline/* underlining when hovering over a link*/
 }
 a:focus { 
-    color:#889182;
+    color:#4F564A;
     text-decoration:underline
 }
 a:active { /*selected link */
-    color:#EEC5B4;
+    color:#CF9F87;
 }
 .button {
+    font-family: 'Lexend', sans-serif;
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color:#BF9F58;
+    background-color:#81611A;
     color: #FFFEFB; /* needed to override the default link color */
-    font-weight: 400;
+    font-weight: 300;
     padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #889182; /* width of the border, type, color */
+    border-radius: 10px;
     transition: 0.2s opacity;
+    text-transform: uppercase;
   }
-.button:hover {
+  .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
 .button.contact {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
     background-color: transparent;
-    color:#BF9F58;
+    color:#81611A;
     text-transform: uppercase;
-    border: 2px solid #BF9F58;
+    border: 2px solid #81611A;
   }
 .button.contact:hover {
-    background-color: #BF9F58;
+    background-color: #81611A;
     color: #FFFEFB
   }
