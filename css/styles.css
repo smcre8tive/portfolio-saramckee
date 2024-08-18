@@ -19,6 +19,7 @@ body {
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color:#040404
 }
+/* Body Text */
 h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -32,7 +33,6 @@ h1, h2, h3, h4 {
     font-size:2.5em; /* 50px */
     font-weight:400;
   }
-  
   h3 {
     font-family: 'Lora', serif;
     font-size:2em; /* 40px */
@@ -43,10 +43,11 @@ h1, h2, h3, h4 {
     font-size:1.8em; /* 30px */
     font-weight:300;
   }
-    
+/* images */
 img {
     width:100%;
 }
+/* links */
 a {
     color:#81611A;
     text-decoration: none; /* no underlining */
@@ -65,6 +66,7 @@ a:focus {
 a:active { /*selected link */
     color:#CF9F87;
 }
+/* Button */
 .button {
     font-family: 'Lexend', sans-serif;
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -76,7 +78,7 @@ a:active { /*selected link */
     transition: 0.2s opacity;
     text-transform: uppercase;
   }
-  .button:hover {
+.button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
@@ -92,3 +94,73 @@ a:active { /*selected link */
     background-color: #81611A;
     color: #FFFEFB
   }
+/* layout styling */
+.container {
+  padding: 0 30;
+}
+#socials {
+  width:5%
+}
+.row {
+  margin: 30px 0; /* 30px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 30px; 
+}
+.center {
+  text-align: center;
+}
+header {
+  background-color:#81611A;
+  text-align: center;
+  padding: 10px 0; /* Adds a 10px inner spacing to all sides */
+  position: fixed;
+  width:100%;
+}
+/* Navigation */
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav> ul {
+  list-style-type: none;
+  padding:0%;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #040404;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4F564A;
+}
+nav > ul > li > a:hover{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #CF9F87;
+}
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #81611A;  
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+.logo {
+  width: 50px;
+}
+#hero  {
+  background-color:#81611A;
+  padding: 133px 20px 0;
+  display: inline-block;
+  width: 100%;
+}
