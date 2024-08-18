@@ -17,7 +17,6 @@ body {
     font-size: 18px; /* sets the font size to 18 px*/
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color:#040404
 }
 /* Body Text */
 h1, h2, h3, h4 {
@@ -86,44 +85,48 @@ a:active { /*selected link */
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     background-color: transparent;
-    color:#81611A;
+    color:#FFFEFB;
     text-transform: uppercase;
-    border: 2px solid #81611A;
+    border: 2px solid #FFFEFB;
   }
 .button.contact:hover {
-    background-color: #81611A;
+    background-color: #4F564A;
     color: #FFFEFB
   }
+* {
+    box-sizing: border-box;
+}
 /* layout styling */
 .container {
-  padding: 0 30;
-}
-#socials {
-  width:5%
+  padding: 0 15;
 }
 .row {
   margin: 30px 0; /* 30px top and bottom, 0 left and right */
 }
 #work .row { padding-bottom: 30px; 
 }
-.center {
-  text-align: center;
+.logo {
+  width: 50px;
+  text-align: left;
+  float: inline-start;
 }
 header {
   background-color:#81611A;
-  text-align: center;
-  padding: 10px 0; /* Adds a 10px inner spacing to all sides */
+  padding: 30px; /* Adds a 30px inner spacing to all sides */
   position: fixed;
+  text-align:right;
   width:100%;
 }
-/* Navigation */
+.logo:hover {
+  opacity: 0.5; /* Reduces the opacity of the button to 50% */
+}
 nav {
   display: inline-block;
   width: 100%;
 }
 nav> ul {
   list-style-type: none;
-  padding:0%;
+  padding:0% 30px;
 }
 nav > ul > li {
   display: inline-block;
@@ -132,19 +135,19 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #040404;
+  color: #FFFEFB;
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #4F564A;
+  color:#040404;
 }
 nav > ul > li > a:hover{
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #CF9F87;
+  color: #4F564A;
 }
 .css-box-shadow{
 	/*start ------------*/
@@ -155,12 +158,31 @@ nav > ul > li > a:hover{
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
-.logo {
-  width: 50px;
-}
-#hero  {
+.hero  {
+  color:#FFFEFB;
   background-color:#81611A;
   padding: 133px 20px 0;
   display: inline-block;
   width: 100%;
+}
+.work {
+  background-color:#FFFEFB;
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+}
+footer {
+  color:#FFFEFB;
+  background-color:#81611A;
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.socials {
+  width: 10%;
+  padding: 0 15px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
 }
