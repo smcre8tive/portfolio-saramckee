@@ -13,44 +13,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 
-	<body>
+	<body id="about-page">
 		<!-- For the header -->
-		<header>
+        <header class="css-box-shadow"> <!-- For the header -->
 			<div class="container">
-                <div class="logo">
-				    <img src="img/image_logo.png" alt="Sara McKee Creative Logo">
-				</div>
-                <nav>
+				<nav>
+					<div class="logo"><a href="index.html"></a><img src="img/logo.jpg" alt="Sara McKee Creative Logo"></div>
 					<ul class="navigation">
-						<li><a href="index.html">Work</a></li>
 						<li><a href="about.html">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
         <main>
-            <div class="container"><!--whole section block-->
-                <div><!--container wrapper-->
+            <div id="hero"><!--whole section block-->
+                <div class="container"><!--container wrapper-->
                     <h1>About Sara McKee</h1>
                 </div>
-                <div><!--container wrapper-->
+                <div class="container"><!--container wrapper-->
                     <picture>
                         <img src="img/about/Me2023 2@2x.png" alt="Image of me">
                     </picture>
-                    <div><!--row for columns-->
-                        <div><!--column 1-->
+                    <div class="row"><!--row for columns-->
+                        <div class="col-md-6 col-lg-7"><!--column 1-->
                             <h2>My Story</h2>
                             <p>I am a Texas-based Digital Designer with an art education background, and four years of experience in UX design. I currently am pursuing a master's degree in Interaction Design at the Savannah College of Art &amp; Design. I am also just completed a Bootcamp certificate with Career Foundry in UI &amp; Front End Development for Designers. I passionate about creating equitable usability experiences and eager to work on innovative digital products with companies that are ideally working towards design for good. I am also constantly seeking new opportunities to grow my digital design skills.</p>
                             <a href="#resume">Resume</a>
                         </div>
-                        <div><!--column 2-->
+                        <div class="col-md-6 col-lg-7"><!--column 2-->
                             <h3>Skills &amp; Tools</h3>
-                            <div><!--row for columns-->
-                                <div><!--column 1-->
+                            <div class="row"><!--row for columns-->
+                                <div class="col-md-6 col-lg-7"><!--column 1-->
                                     <h4>Skills</h4>
                                     <ul>
                                         <li>UX Design</li>
@@ -62,9 +59,8 @@
                                         <li>Inclusive Design</li>
                                         <li> Remote Work</li>
                                     </ul>
-
                                 </div>
-                                <div><!--column 2-->
+                                <div class="col-md-6 col-lg-7"><!--column 2-->
                                     <h4>Tools</h4>
                                     <ul>
                                         <li>Figma</li>
@@ -81,29 +77,27 @@
                                     </ul>
                                 </div>
                             </div>
-                
-
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <div></div>
         </main>
 		<!-- For the footer  -->
 		<footer><!--whole section block-->
 			<div class="container"><!--container/wrapper)-->
-				<h3>Get In Touch</h3>
-				<p>Do you like my work and want to discuss opportunities? Please get in touch. Call:<a href="+49-123-4567">=+491234567</a> Prefer sending an email?</p>
 				<div>
-					<a href="mailto:sm@saramckeecreative.com" class="button contact">Email</a>
+					<h2>Let's Connect!</h2>
+					<a href="#" class="button contact">Contact</a>
 				</div>
-				<div id="socials"><!--Social Media Layout and Placeholders-->
-					<a href="https://www.linkedin.com/in/sara-mckee/" target="_blank">
-					<img src="img/linkedin.svg" alt="LinkedIn logo"></a>
-					<a href="INSTAGRAM-URL" target="_blank">
-					<img src="img/instagram.svg" alt="Instagram Logo"></a>
-				</div>	
+				<ul class ="social">
+				<!--Social Media Layout and Placeholders-->
+					<li><a href="https://www.linkedin.com/in/sara-mckee/" target="Sara McKee's LinkedIn">
+						<img src="img/linkedin.svg" alt="LinkedIn Logo"></a>
+					</li>
+					<li><a href="INSTAGRAM-URL" target="_blank">
+						<img src="img/instagram.svg" alt="Instagram Logo"></a>
+					</li>
+				</ul>
 				<div>
 					<p>Copyright Sara McKee 2024</p>
 				</div>
