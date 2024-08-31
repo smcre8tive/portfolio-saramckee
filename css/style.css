@@ -1,0 +1,394 @@
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+/* colors used:
+primary (green): #4F564A;
+secondary (gold): #81611A;
+highlight (pink): #CF9F87;
+black: #040404;
+white: #FFFEFB;
+*/
+body { 
+  background-color:#FFFEFB;
+  font-family:'Lora', serif; /* for h1-h3 */
+  font-size:30px; /* sets the font size to 30 px*/
+  font-weight:300; /* sets the font weight to 300 */
+  line-height:1.6; /* sets the line height to 1.6 * the font-size */
+  color: #040404;
+  font-family: 'Lexend', sans-serif; /* for h4-p and buttons*/
+  font-size: 18px; /* sets the font size to 18 px*/
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+/* Body Text */
+h1, h2, h3, h4 {
+  line-height:1.4;
+}
+h1 {
+  font-family:'Lora', serif;
+  font-size:3em; /* 60px */
+  font-weight:300
+}
+#hero h1 {
+  text-align: center;
+}
+#hero h4 {
+  text-align: center;
+}
+h2 {
+  font-family: 'Lora', serif;
+  font-size:2.5em; /* 50px */
+  font-weight:400;
+}
+h3 {
+  font-family: 'Lora', serif;
+  font-size:2em; /* 40px */
+  font-weight:300;
+}
+h4 {
+  font-family: 'Lexend', sans-serif;
+  font-size:1.8em; /* 30px */
+  font-weight:300;
+}
+
+
+/*setting images to full-width*/
+img {
+  width: 100%;
+}
+
+.headshot-desktop {
+    display: none;
+}
+
+.headshot-mobile {
+    display: block;
+}
+
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+a {
+  color: #81611a;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #CF9F87;
+  text-decoration:underline; /* Underlining when hovering over a link */
+}
+
+/*style the current nav item green-used brand green*/
+.active a {
+    color:#4a4a4a;
+    text-decoration: underline;
+}
+
+a:active { /* selected link */
+  color:#4a4a4a;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color:#040404;
+  text-decoration: underline;
+}
+
+
+/*CSS code for the button class*/
+.button {
+  font-family: 'Lexend',sans-serif;
+  display: inline-block;
+  background-color:#81611a;
+  color:#FFFEFB;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.8s opacity;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: #fffefb;
+  background-color:#4a4a4a;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+
+/*button rules for the mailto button*/
+.button.contact {
+  font-family: 'Lexend',sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  color: #FFFEFB;
+  text-transform: uppercase;
+  border: 2px solid #fffefb;
+  transition: 0.8s opacity;
+}
+
+/*button class hover and active state*/
+
+.button.contact:hover {
+  opacity: 0.8;
+  background-color:#4a4a4a;
+  color: #FFFEFB;
+}
+
+.button.contact:active {
+  opacity: 0.8;
+  background-color:#4a4a4a;
+  color:#FFFEFB;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+  background-color: #81611a;
+  text-align:center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%
+}
+
+/*style the logo*/
+header .logo {
+  max-width: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header .logo:hover {
+  opacity: 0.5; 
+}
+/*Navigation Styling*/
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fffefb;
+}
+
+#hero {
+  color:#FFFEFB;
+  background-color: #81611a;
+  padding: 133px 40px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact {
+    background-color: #FFFEFB;
+    padding: 20px;
+}
+
+
+/*Style the social icons*/
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.social li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.social img {
+  height: 32px;
+  width: 32px;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 20px; }
+
+footer {
+  color:#FFFEFB;
+  background-color:#81611A;
+  padding: 25px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* ================================ SVG Animations ========================= */
+@keyframes color-change {
+  0% {fill: #4F564A;}
+  50% {fill: #81611A;}
+  100% {fill: #CF9F87;}
+}
+@keyframes rotate {
+ 0% {transform:rotate(0deg);}
+ 100% {transform:rotate(90deg);}
+}
+@keyframes fadeIn {
+0% {opacity:0%;}
+100% {opacity:100%;}
+}
+.object3 {
+  animation: rotate 200ms ease-in-out;
+}
+.browser {
+  animation: fadeIn 200ms ease-in-out;
+}
+.logobox {
+  animation: 4s color-change infinite alternate linear;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+    
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+    
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
+    
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+    
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+    
+   #about-page .col-md-6 {
+     width: 100%;
+  }
+    
+  .headshot-desktop {
+        display: block;
+        float: right;
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+  .headshot-mobile {
+    display: none;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ================================ animations ========================= */
+@keyframes color-change {
+  0% {fill: #4F564A;}
+  50% {fill: #81611A;}
+  100% {fill: #CF9F87;}
+}
+@keyframes rotate {
+ 0% {transform:rotate(0deg);}
+ 100% {transform:rotate(90deg);}
+}
+@keyframes fadeIn {
+0% {opacity:0%;}
+100% {opacity:100%;}
+}
+.object3 {
+  animation: rotate 200ms ease-in-out;
+}
+.browser {
+  animation: fadeIn 200ms ease-in-out;
+}
+.logobox {
+  animation: 4s color-change infinite alternate linear;
+}

@@ -1,111 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Sara McKee Creative</title>
-        <meta name="description" content="UX Design Portfolio">
-        <meta property="og:title" content="Sara McKee Creative">
-        <meta property="og:description" content="UX Design Portfolio">
-        <meta name="theme-color" content="#FFFFFF">
-        <meta name="application-name" content="Sara McKee Creative">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sara McKee">
+    <meta name="description" content="UX Design Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <title>Sara McKee Creative</title>
+  </head>
+  <body id="about-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="img/logo.jpg" class="logo" alt="Logo" >
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+		</div>
+	</header>
 
-	<body id="about-page">
-		<!-- For the header -->
-        <header class="css-box-shadow"> <!-- For the header -->
-			<div class="container">
-				<nav>
-					<div class="logo"><a href="index.html"></a><img src="img/logo.jpg" alt="Sara McKee Creative Logo"></div>
-					<ul class="navigation">
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-        <main>
-            <div id="hero"><!--whole section block-->
-                <div class="container"><!--container wrapper-->
-                    <h1>About Sara McKee</h1>
-                </div>
-                <div class="container"><!--container wrapper-->
-                    <picture>
-                        <img src="img/about/Me2023 2@2x.png" alt="Image of me">
-                    </picture>
-                    <div class="row"><!--row for columns-->
-                        <div class="col-md-6 col-lg-7"><!--column 1-->
+    <main>
+        <!-- For the hero section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+                <h1>About Sara McKee</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <img class="headshot-mobile" src="img/about/Me2023 2@2x.png" alt="My Image">
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
                             <h2>My Story</h2>
-                            <p>I am a Texas-based Digital Designer with an art education background, and four years of experience in UX design. I currently am pursuing a master's degree in Interaction Design at the Savannah College of Art &amp; Design. I am also just completed a Bootcamp certificate with Career Foundry in UI &amp; Front End Development for Designers. I passionate about creating equitable usability experiences and eager to work on innovative digital products with companies that are ideally working towards design for good. I am also constantly seeking new opportunities to grow my digital design skills.</p>
-                            <a href="#resume">Resume</a>
+                            <p><img class="headshot-desktop" src="img/about/Me2023 2@2x.png" alt="My Image">I am a Texas-based digital designer with an art education background &amp; an eye for creative visual problem solving.</p>
+                            <p>I currently am pursuing a master's degree in Interaction Design at the Savannah College of Art &amp; Design.</p>
+                            <p>I also just completed a Bootcamp certificate with Career Foundry in UI &amp; Front End Development for Designers.</p>
+                            <p>I'm passionate about creating equitable, digital, usability experiences and eager to work on innovative digital products with companies that are ideally working towards design for good.</p>
+                            <p>I am also constantly seeking new opportunities to explore &amp; grow my digital design skills.</p>
+                            <div class="center"><a href="#" target="_blank" title="View my resume" class="button secondary">Resume</a></div>
                         </div>
-                        <div class="col-md-6 col-lg-7"><!--column 2-->
-                            <h3>Skills &amp; Tools</h3>
-                            <div class="row"><!--row for columns-->
-                                <div class="col-md-6 col-lg-7"><!--column 1-->
-                                    <h4>Skills</h4>
-                                    <ul>
-                                        <li>UX Design</li>
-                                        <li> UX Research</li>
-                                        <li>  UI Design</li>
-                                        <li> Responsive Design</li>
-                                        <li> Diverse Digital Platform Design</li>
-                                        <li>Front End Design Basics</li>
-                                        <li>Inclusive Design</li>
-                                        <li> Remote Work</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-7"><!--column 2-->
-                                    <h4>Tools</h4>
-                                    <ul>
-                                        <li>Figma</li>
-                                        <li>Sketch</li>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Adobe InDesign</li>
-                                        <li>Chat GPT</li>
-                                        <li>Google Suite</li>
-                                        <li>Microsoft Suite</li>
-                                        <li>Git-Hub</li>
-                                        <li>Visual Studio Code</li>
-                                        <li>Slack</li>
-                                        <li>Discord</li>
-                                    </ul>
-                                </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Relevant Skills</h3>
+                                <ul>
+                                    <li>UX Design</li>
+                                    <li>UX Research</li>
+                                    <li>UI Design</li>
+                                    <li>Responsive Design</li>
+                                    <li>Diverse Digital Platform Design</li>
+                                    <li>Front End Design CSS &amp; HTML</li>
+                                    <li>Inclusive Design</li>
+                                    <li>Interactive Design</li>
+                                    <li>Remote Work</li>
+                                </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Tools I use</h3>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Chat GPT</li>
+                                    <li>Google Suite</li>
+                                    <li>Microsoft Suite</li>
+                                    <li>Git-Hub</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe InDesign</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Slack</li>
+                                    <li>Discord</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-		<!-- For the footer  -->
-		<footer><!--whole section block-->
-			<div class="container"><!--container/wrapper)-->
-				<div>
-					<h2>Let's Connect!</h2>
-					<a href="#" class="button contact">Contact</a>
-				</div>
-				<ul class ="social">
-				<!--Social Media Layout and Placeholders-->
-					<li><a href="https://www.linkedin.com/in/sara-mckee/" target="Sara McKee's LinkedIn">
-						<img src="img/linkedin.svg" alt="LinkedIn Logo"></a>
-					</li>
-					<li><a href="INSTAGRAM-URL" target="_blank">
-						<img src="img/instagram.svg" alt="Instagram Logo"></a>
-					</li>
-				</ul>
-				<div>
-					<p>Copyright Sara McKee 2024</p>
-				</div>
-			</div>
-		</footer>
-        <script src="js/scripts.js"></script>
-        <script>
-			alert("Thank You For Visiting My Portfolio!");
-		</script>
-	</body>
+        </div>
+    </main>
+
+
+<!-- For the footer  -->
+<footer><!--whole section block-->
+    <div class="container"><!--container/wrapper)-->
+        <div>
+            <h2>Let's Connect!</h2>
+            <a href="#" class="button contact">Contact</a>
+        </div>
+        <ul class ="social">
+        <!--Social Media Layout and Placeholders-->
+            <li><a href="https://www.linkedin.com/in/sara-mckee/" target="Sara McKee's LinkedIn">
+                <img src="img/linkedin.svg" alt="LinkedIn Logo"></a>
+            </li>
+            <li><a href="INSTAGRAM-URL" target="_blank">
+                <img src="img/instagram.svg" alt="Instagram Logo"></a>
+            </li>
+        </ul>
+        <div>
+            <p>Copyright Sara McKee 2024</p>
+        </div>
+    </div>
+</footer>
+  </body>
 </html>
