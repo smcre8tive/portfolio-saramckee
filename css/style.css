@@ -198,7 +198,7 @@ nav > ul > li > a {
 
 #hero {
   color:#FFFEFB;
-  background-color: #81611a;
+  background-color:#81611A;
   padding: 133px 40px 0;
   display: inline-block;
   width: 100%;
@@ -212,7 +212,6 @@ nav > ul > li > a {
     background-color: #FFFEFB;
     padding: 20px;
 }
-
 
 /*Style the social icons*/
 .social {
