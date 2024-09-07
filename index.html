@@ -17,45 +17,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
+    <script src="https://kit.fontawesome.com/86e4711f5a.js" crossorigin="anonymous"></script>
     <title>Sara McKee Creative</title>
   </head>
   <body id="index-page">
     <!-- For the header -->
-	<header>
-		<!-- For the navigation -->
-		<div class="container">
-            <a href="index.html">
-			 <img src="img/logo.jpg" class="logo" alt="Logo" >
-            </a>
-            <nav>
-              <ul class="navigation">
-                <li class="active"><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-		</div>
-	</header>
+	  <header>
+		  <!-- For the navigation -->
+		  <div class="container"> 
+        <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+			          <img src="img/logo.jpg" class="logo" alt="Logo" >
+                </a>
+              <nav>
+                <ul>
+                  <li class="active"><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </nav>
+        </div>
+		  </div>
+	  </header>
 
     <main>
-        <!-- For the hero section -->
-        <div id="hero">
-            <div class="container">
-                <h1>Hi, I'm Sara McKee, UX Designer.</h1>
-                <h4>
-                  I am passionate about designing human focused digital experiences for good.
-                </h4>
-            </div>
+      <!-- For the hero section -->
+      <div id="hero">
+        <div class="row" style="border-bottom: 2px; margin-bottom: 40px;">
+          <div class="column col-md-6 col-lg-5">
+            <h1>Hi, I'm Sara McKee, UX Designer.</h1>
+            <h4>
+               I am passionate about designing research backed digital experiences for humans with the goal of good.
+            </h4>
+          </div>
+          <div class="column col-md-6 col-lg-7">
+              <picture><img src="img/index/herodetail.svg" alt="Minimalist organic shapes and a small profile image of sara mckee."></picture>
+          </div>
         </div>
-
-        <!-- For your work/projects -->
-        <div id="work">
-            <div class="container">
-                <div>
-                    <h2>Selected Works</h2>
-                </div>
-                <!--Project One-->
+      </div>
+      <!-- For your work/projects -->
+      <div id="work">
+        <div class="container">
+          <div>
+            <h2>Selected Works</h2>
+          </div>
+          <!--Project One-->
                 <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
                   <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
                     <h3>ProctastiGreat</h3><!-- heading for the project -->
@@ -182,24 +189,21 @@
                   </div><!-- end first column -->
                 </div><!-- end row that holds (2) columns for project -->
             </div>
-        </div>
+      </div>
     </main>
 
 
-<!-- For the footer  -->
-	<footer><!--whole section block-->
+    <!-- For the footer  -->
+	  <footer><!--whole section block-->
 			<div class="container"><!--container/wrapper)-->
 				<div>
 					<h2>Let's Connect!</h2>
-					<a href="#" class="button contact">Contact</a>
+					<a href="mailto:sm@saramckeecreative.com" class="button contact">Email Me</a>
 				</div>
 				<ul class ="social">
 				<!--Social Media Layout and Placeholders-->
-					<li><a href="https://www.linkedin.com/in/sara-mckee/" target="Sara McKee's LinkedIn">
+					<li><a href="https://www.linkedin.com/in/sara-mckee/" target="_blank">
 						<img src="img/linkedin.svg" alt="LinkedIn Logo"></a>
-					</li>
-					<li><a href="INSTAGRAM-URL" target="_blank">
-						<img src="img/instagram.svg" alt="Instagram Logo"></a>
 					</li>
 				</ul>
 				<div>
@@ -208,4 +212,9 @@
 			</div>
 		</footer>
   </body>
+  <script src="js/scripts.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 </html>

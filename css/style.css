@@ -27,47 +27,45 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
+
 /* Body Text */
 h1, h2, h3, h4 {
   line-height:1.4;
 }
 h1 {
   font-family:'Lora', serif;
-  font-size:3em; /* 60px */
-  font-weight:300
+  font-size:2.5em; /* 50px */
+  font-weight:200
 }
 #hero h1 {
-  text-align: center;
+  text-align: left;
 }
 #hero h4 {
-  text-align: center;
+  text-align: left;
 }
 h2 {
   font-family: 'Lora', serif;
-  font-size:2.5em; /* 50px */
-  font-weight:400;
+  font-size:2em; /* 40px */
+  font-weight:200;
 }
 h3 {
   font-family: 'Lora', serif;
-  font-size:2em; /* 40px */
-  font-weight:300;
+  font-size:1.8em; /* 30px */
+  font-weight:200;
 }
 h4 {
   font-family: 'Lexend', sans-serif;
   font-size:1.8em; /* 30px */
-  font-weight:300;
+  font-weight:200;
 }
-
 
 /*setting images to full-width*/
 img {
   width: 100%;
 }
-
 .headshot-desktop {
     display: none;
 }
-
 .headshot-mobile {
     display: block;
 }
@@ -84,12 +82,11 @@ a:hover {
 
 /*style the current nav item green-used brand green*/
 .active a {
-    color:#4a4a4a;
+    color:#040404;
     text-decoration: underline;
 }
-
 a:active { /* selected link */
-  color:#4a4a4a;
+  color:#FFFEFB;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -99,12 +96,11 @@ a:focus {
   text-decoration: underline;
 }
 
-
 /*CSS code for the button class*/
 .button {
   font-family: 'Lexend',sans-serif;
   display: inline-block;
-  background-color:#81611a;
+  background-color:#040404;
   color:#FFFEFB;
   font-weight: 300;
   text-decoration: none;
@@ -113,19 +109,16 @@ a:focus {
   transition: 0.8s opacity;
   text-transform: uppercase;
 }
-
 .button:hover {
   opacity: 0.8;
-  color: #fffefb;
-  background-color:#4a4a4a;
+  color:#81611A;
+  background-color:#FFFEFB;
   text-decoration: none;
 }
-
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
 
 /*button rules for the mailto button*/
 .button.contact {
@@ -139,16 +132,14 @@ a:focus {
 }
 
 /*button class hover and active state*/
-
 .button.contact:hover {
   opacity: 0.8;
-  background-color:#4a4a4a;
+  background-color:#040404;
   color: #FFFEFB;
 }
-
 .button.contact:active {
   opacity: 0.8;
-  background-color:#4a4a4a;
+  background-color:#040404;
   color:#FFFEFB;
 }
 
@@ -157,45 +148,61 @@ a:focus {
 /*stye the page sections*/
 
 /*style the <header> element*/
+
 header {
   background-color: #81611a;
-  text-align:center;
-  padding: 10px 0;
+  padding: 10px 4px;
   position: fixed;
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%
 }
-
 /*style the logo*/
 header .logo {
   max-width: 50px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 header .logo:hover {
   opacity: 0.5; 
 }
+
 /*Navigation Styling*/
 nav {
   display: inline-block;
 }
-
 nav > ul {
   list-style-type: none;
   padding: 0;
+  position: right;
 }
-
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fffefb;
+}  
+.navtoggle li:not(:last-child) {
+  display: none;
 }
-
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 25px;
+}
+.navtoggle.responsive li  {
+  float:right;
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80.0.5);
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+/*Hero Styling */
 #hero {
   color:#FFFEFB;
   background-color:#81611A;
@@ -203,11 +210,18 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
 }
-
+#herodetail {
+  display: inline-block;
+  width: 20%;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 #hero span {
   display: block;
 }
 
+/*Style Contact*/
 #contact {
     background-color: #FFFEFB;
     padding: 20px;
@@ -219,31 +233,17 @@ nav > ul > li > a {
   padding: 0;
   margin-left: -10px;
 }
-
 .social li {
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
 }
-
 .social img {
   height: 32px;
   width: 32px;
 }
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/* Layout styling */
 
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#work .row { padding-bottom: 20px; }
-
+/* Footer Styling */
 footer {
   color:#FFFEFB;
   background-color:#81611A;
@@ -252,7 +252,110 @@ footer {
   width: 100%;
   text-align: center;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 20px;
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
+    
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+   #about-page .col-md-6 {
+     width: 100%;
+  }
+  .headshot-desktop {
+        display: block;
+        float: right;
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+  .headshot-mobile {
+    display: none;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* ================================ SVG Animations ========================= */
 @keyframes color-change {
@@ -278,116 +381,3 @@ footer {
   animation: 4s color-change infinite alternate linear;
 }
 /*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*Media Queries*/
-
-/*clear page flow*/
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*float all columns left*/
-[class*="col-"] {
-  padding: 10px;
-}
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  body {
-    font-size: 18px;
-  }
-    
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-  }
-    
-  .col-md-6 {
-    width: 50%;
-    float: left;
-    padding-bottom: 40px;
-  }
-    
-}
-
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .col-lg-7 {
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-    
-  .col-lg-7 {
-    width: 60%;
-    float: left;
-    padding-bottom: 40px;
-  }
-  .col-lg-8 {
-    width: 40%;
-    float: right;
-  }
-    
-   #about-page .col-md-6 {
-     width: 100%;
-  }
-    
-  .headshot-desktop {
-        display: block;
-        float: right;
-        width: 50%;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    
-  .headshot-mobile {
-    display: none;
-}
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-/* ================================ animations ========================= */
-@keyframes color-change {
-  0% {fill: #4F564A;}
-  50% {fill: #81611A;}
-  100% {fill: #CF9F87;}
-}
-@keyframes rotate {
- 0% {transform:rotate(0deg);}
- 100% {transform:rotate(90deg);}
-}
-@keyframes fadeIn {
-0% {opacity:0%;}
-100% {opacity:100%;}
-}
-.object3 {
-  animation: rotate 200ms ease-in-out;
-}
-.browser {
-  animation: fadeIn 200ms ease-in-out;
-}
-.logobox {
-  animation: 4s color-change infinite alternate linear;
-}
