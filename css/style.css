@@ -9,54 +9,53 @@
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
 /* colors used:
-primary (green): #4F564A;
-secondary (gold): #81611A;
-highlight (pink): #CF9F87;
+primary (gold): #BF9F58;
+secondary (green): #889182;
+highlight (pink): #EEC5B4;
 black: #040404;
 white: #FFFEFB;
 */
 body { 
   background-color:#FFFEFB;
   font-family:'Lora', serif; /* for h1-h3 */
-  font-size:30px; /* sets the font size to 30 px*/
-  font-weight:300; /* sets the font weight to 300 */
+  font-size:40px; /* sets the font size to 30 px*/
+  font-weight:200; /* sets the font weight to 300 */
   line-height:1.6; /* sets the line height to 1.6 * the font-size */
   color: #040404;
   font-family: 'Lexend', sans-serif; /* for h4-p and buttons*/
-  font-size: 18px; /* sets the font size to 18 px*/
-  font-weight: 300; /* Sets the font weight to 300 */
+  font-size: 20px; /* sets the font size to 18 px*/
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
 /* Body Text */
 h1, h2, h3, h4 {
-  line-height:1.4;
+  line-height:1.6;
 }
 h1 {
   font-family:'Lora', serif;
-  font-size:2.5em; /* 50px */
-  font-weight:200
+  font-size:3em; /* 52px */
+  font-weight:100;
+  text-transform: uppercase;
+  text-align: center;
 }
 #hero h1 {
   text-align: left;
 }
-#hero h4 {
-  text-align: left;
-}
+
 h2 {
   font-family: 'Lora', serif;
+  font-size:2.5em; /* 40px */
+  font-weight:300;
+}
+h3 {
+  font-family: 'Lexend', serif;
   font-size:2em; /* 40px */
   font-weight:200;
 }
-h3 {
-  font-family: 'Lora', serif;
-  font-size:1.8em; /* 30px */
-  font-weight:200;
-}
-h4 {
-  font-family: 'Lexend', sans-serif;
-  font-size:1.8em; /* 30px */
-  font-weight:200;
+h4{
+  font-family: 'Lexend', serif;
+  font-size:1em; /* 40px */
+  font-weight:500;
 }
 
 /*setting images to full-width*/
@@ -69,24 +68,31 @@ img {
 .headshot-mobile {
     display: block;
 }
-
+/*more image adjustments*/
+.tools {
+  max-width: 300px;
+}
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-  color: #81611a;
+  font-family:'Lora';
+  font-size: 1.5em;
+  color: #040404;
   text-decoration: none; /* No underlining */
+  text-transform: uppercase;
 }
 a:hover {
-  color: #CF9F87;
   text-decoration:underline; /* Underlining when hovering over a link */
 }
 
 /*style the current nav item green-used brand green*/
 .active a {
-    color:#040404;
-    text-decoration: underline;
+  opacity: 0.8;
+  color:#040404;
+  text-decoration: underline;
 }
 a:active { /* selected link */
-  color:#FFFEFB;
+  color:#040404;
+  text-decoration: underline;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -98,36 +104,41 @@ a:focus {
 
 /*CSS code for the button class*/
 .button {
-  font-family: 'Lexend',sans-serif;
+  font-family:'Lexend',sans-serif;
+  font-size: 1em;
   display: inline-block;
   background-color:#040404;
   color:#FFFEFB;
+  filter: drop-shadow(30px 10px 4px #0000(50%));
   font-weight: 300;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: 0.8s opacity;
   text-transform: uppercase;
 }
 .button:hover {
   opacity: 0.8;
-  color:#81611A;
-  background-color:#FFFEFB;
+  color:#040404;
+  background-color:#Bf9558;
   text-decoration: none;
 }
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  font-weight: 400;
+  color:#040404;
+  background-color: #Bf9558;
 }
 
 /*button rules for the mailto button*/
 .button.contact {
   font-family: 'Lexend',sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   background-color: transparent;
-  color: #FFFEFB;
+  color:#040404;
   text-transform: uppercase;
-  border: 2px solid #fffefb;
+  border: 2px solid #040404;
   transition: 0.8s opacity;
 }
 
@@ -135,12 +146,14 @@ a:focus {
 .button.contact:hover {
   opacity: 0.8;
   background-color:#040404;
-  color: #FFFEFB;
+  color: #FFFEFB
+
 }
 .button.contact:active {
   opacity: 0.8;
-  background-color:#040404;
-  color:#FFFEFB;
+  font-weight: 400;
+  background-color:transparent;
+  color:#040404;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -150,8 +163,8 @@ a:focus {
 /*style the <header> element*/
 
 header {
-  background-color: #81611a;
-  padding: 10px 4px;
+  background-color: #Bf9558;
+  padding: 10px 0px;
   position: fixed;
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%
@@ -173,14 +186,19 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  position: right;
 }
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #fffefb;
+  color: #040404;
 }  
+nav {
+  width:auto;
+  float:right;
+}
+
+/* for hamburgur menu */
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -189,23 +207,41 @@ nav > ul > li > a {
 }
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 25px;
   font-size: 25px;
 }
 .navtoggle.responsive li  {
   float:right;
   display: block;
-  padding: 10px 0;
+  padding: 0px 50px 0px 0px;
   border-top: 1px solid rgba(255,127,80.0.5);
 }
 .navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
+  padding: 0px;
 }
+
+/* Jump Link Styling */
+.jumplinks {
+  align-items: center;
+  display: inline-block;
+  width:100%
+}
+.jumplinks > ul {
+  list-style-type:none;
+  padding: 40px;
+}
+.jumplinks > ul > li > a {
+  padding: 0 ;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #040404;
+}  
+
 /*Hero Styling */
 #hero {
-  color:#FFFEFB;
-  background-color:#81611A;
+  color:#040404;
+  background-color:#FFFEFB;
   padding: 133px 40px 0;
   display: inline-block;
   width: 100%;
@@ -245,8 +281,8 @@ nav > ul > li > a {
 
 /* Footer Styling */
 footer {
-  color:#FFFEFB;
-  background-color:#81611A;
+  color:#040404;
+  background-color:#Bf9558;
   padding: 25px;
   display: inline-block;
   width: 100%;
@@ -359,23 +395,9 @@ X-large devices (1440px or larger)
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* ================================ SVG Animations ========================= */
 @keyframes color-change {
-  0% {fill: #4F564A;}
-  50% {fill: #81611A;}
-  100% {fill: #CF9F87;}
-}
-@keyframes rotate {
- 0% {transform:rotate(0deg);}
- 100% {transform:rotate(90deg);}
-}
-@keyframes fadeIn {
-0% {opacity:0%;}
-100% {opacity:100%;}
-}
-.object3 {
-  animation: rotate 200ms ease-in-out;
-}
-.browser {
-  animation: fadeIn 200ms ease-in-out;
+  0% {fill: #BF9F58;}
+  50% {fill: #889182;}
+  100% {fill: #EEC5B4;}
 }
 .logobox {
   animation: 4s color-change infinite alternate linear;
