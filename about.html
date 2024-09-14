@@ -5,7 +5,7 @@
     <meta name="author" content="Sara McKee">
     <meta name="description" content="UX Design Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
@@ -27,13 +27,20 @@
 		<div class="container">
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html">
-                <img src="img/logo.jpg" class="logo" alt="Logo" >
+                <img src="img/Logo.png" class="logo" alt="Logo" >
                 </a>
                 <nav>
                     <ul class="navigation">
                         <li><a href="index.html">Work</a></li>
                         <li class="active"><a href="about.html">About</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                        <li>
+                          <p id="click_advance">
+                              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                              <i class="fas fa-bars"></i>
+                              </a>
+                          </p>
+                        </li>
                     </ul>
                 </nav>
             </div>

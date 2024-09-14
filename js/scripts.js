@@ -1,4 +1,4 @@
-function menuToggle() {
+function menuToggle(x) {
     var x = document.getElementById('myNavtoggle');
     if (x.className === 'navtoggle') {
       x.className += ' responsive';
@@ -6,6 +6,7 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
   }
-$('#ParentContainer').scroll(function() { 
-    $('#FixedDiv').css('top', $(this).scrollTop());
+$('#click_advance').click(function() {
+  $('#display_advance').toggle('1000');
+  $("i", this).toggleClass("fas fa-bars fas fa-x");
 });
