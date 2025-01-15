@@ -13,7 +13,7 @@ html {
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
 /* colors used:
-primary (gold): #BF9F58;
+primary (gold): ##BF9F58;
 secondary (green): #889182;
 highlight (pink): #EEC5B4;
 black: #040404;
@@ -22,12 +22,12 @@ white: #FFFEFB;
 body { 
   background-color:#FFFEFB;
   font-family:'Lora', serif; /* for h1-h3 */
-  font-size:20px; /* sets the font size to 30 px*/
-  font-weight:200; /* sets the font weight to 300 */
+  font-size:18px; /* sets the font size to 18 px*/
+  font-weight:200; /* sets the font weight to 200 */
   line-height:1.6; /* sets the line height to 1.6 * the font-size */
   color: #040404;
   font-family: 'Lexend', sans-serif; /* for h4-p and buttons*/
-  font-size: 20px; /* sets the font size to 18 px*/
+  font-size: 18px; /* sets the font size to 18 px*/
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
@@ -37,14 +37,14 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-family:'Lora', serif;
-  font-size:2.5em; /* 50px */
+  font-size:2.5em; /* 45px */
   font-weight:100;
 
   /*text-transform: uppercase;*/
 }
 h2 {
   font-family: 'Lexend', serif;
-  font-size:1.5em; /* 30px */
+  font-size:2em; /* 36px */
   font-weight:200;
   margin-top: -8px;
 }
@@ -52,7 +52,7 @@ h2 {
 
 h3{
   font-family: 'Lexend', serif;
-  font-size:1em; /* 40px */
+  font-size:1.5em; /* 27px */
   font-weight:500;
 }
 
@@ -74,7 +74,8 @@ img {
 a {
   font-family:'Lora';
   font-size: 1.5em;
-  color: #040404;
+  color: #BF9F58;
+  font-weight: 300;
   text-decoration: none; /* No underlining */
   text-transform: uppercase;
 }
@@ -85,11 +86,11 @@ a:hover {
 /*style the current nav item green-used brand green*/
 .active a {
   opacity: 0.8;
-  color:#040404;
+  color:#889182;
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color:#040404;
+  color:#EEC5B4;
   text-decoration: underline;
 }
 
@@ -97,6 +98,7 @@ a:active { /* selected link */
 a:hover,
 a:focus {
   color:#040404;
+  font-weight: bold;
   text-decoration: underline;
 }
 
